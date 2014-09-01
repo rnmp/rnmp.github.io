@@ -20,12 +20,33 @@ img, object, embed {
 body {
 	font: 200 16pt/18pt 'Ideal Sans SSm A', 'Ideal Sans SSm B', sans-serif;
 	background: #fff url('/img/body.png') center bottom;
-	color: #666;
+	color: #232323;
 }
 
 a {
 	color: red;
 	text-decoration: none;
+}
+
+p {
+	text-align: justify;
+	font-size: 16pt;
+	line-height: 1.5;
+}
+
+/*strong*/.small-caps {
+	margin-right: 10px;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: .7em;
+	text-transform: uppercase;
+}
+
+mark {
+	color: #fff;
+	background: #232323;
+	/*position: absolute;*/
+	/*right: 100%;*/
 }
 
 .hidden {
@@ -56,11 +77,8 @@ a {
 	overflow: hidden;
 	margin-bottom: 2em;
 }
-
-.lead {
-	text-align: justify;
-	font-size: 16pt;
-	line-height: 1.5;
+.section img {
+	margin-bottom: 1em;
 }
 
 #signature {
@@ -79,7 +97,7 @@ a {
 	footer.section {
 		padding: 1em;
 	}
-	.lead {
+	p {
 		font-size: 14px;
 	}
 	#signature {
@@ -89,7 +107,7 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-	.lead {
+	p {
 		font-size: 24px;
 	}
 }
