@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+aside, footer, figure, header,
+section, img, object, embed {
+	display: block;
+}
+
+img, object, embed {
+	max-width: 100%;
+}
+
+body {
+	font: 200 16pt/18pt 'Ideal Sans SSm A', 'Ideal Sans SSm B', sans-serif;
+	background: #fff url('/img/body.png') center bottom;
+	color: #666;
+}
+
+a {
+	color: red;
+	text-decoration: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.column {
+	float: left;
+}
+
+.width-1of2 {
+	width: 50%;
+}
+
+.fit {
+	width: 100%;
+}
+
+.canvas {
+	position: relative;
+	width: 75%;
+	padding: 10% 0 0;
+	margin: auto;
+	z-index: 2;
+}
+
+.section {
+	overflow: hidden;
+	margin-bottom: 2em;
+}
+
+.lead {
+	text-align: justify;
+	font-size: 16pt;
+	line-height: 1.5;
+}
+
+#signature {
+	float: right;
+	width: 160px;
+}
+
+@media screen and (max-width: 480px) {
+	.section {
+		margin: 0;
+	}
+	.canvas {
+		width: 100%;
+		padding: 0;
+	}
+	footer.section {
+		padding: 1em;
+	}
+	.lead {
+		font-size: 14px;
+	}
+	#signature {
+		margin-top: 20px;
+		width: 100px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.lead {
+		font-size: 24px;
+	}
+}
