@@ -19,7 +19,7 @@ img, object, embed {
 
 body {
 	font: 200 16pt/18pt 'Ideal Sans SSm A', 'Ideal Sans SSm B', sans-serif;
-	background: #fff url('/img/body.png') center bottom;
+	background: #fffef8;
 	color: #232323;
 }
 
@@ -37,8 +37,7 @@ h1 .light {
 }
 
 p {
-	text-align: justify;
-	font-size: 16pt;
+	font-size: 1em;
 	line-height: 1.5;
 }
 
@@ -74,29 +73,20 @@ p {
 	margin-bottom: 1em;
 }
 
-.major-section {
+hr {
+	position: relative;
+	top: -1em;
+	width: 5%;
+	margin: auto;
+}
+.major-section, hr {
 	border-top: 1px solid #666;
+}
+.major-section {
 	padding-top: 1em;
 }
 .major-section h1 {
 	margin-bottom: 1em;
-}
-
-.project-thumbnail {
-	overflow: hidden;
-	float: left;
-	width: 50%;
-	margin-bottom: 1em;
-}
-.project-thumbnail:nth-of-type(2n) {
-	padding-left: 2.5%;
-}
-.project-thumbnail:nth-of-type(2n-1) {
-	clear: both;
-	padding-right: 2.5%;
-}
-.project-thumbnail p {
-	font-size: .8em;
 }
 
 #signature {
@@ -105,27 +95,45 @@ p {
 }
 
 @media screen and (max-width: 480px) {
-	.section {
-		margin: 0;
+	body {
+		font-size: 12pt;
+	}
+	p {
+		padding: 1em;
+		padding-top: 0;
+	}
+	.major-section > h1 {
+		padding-left: 1em;
 	}
 	.canvas {
 		width: 100%;
 		padding: 0;
-	}
-	footer.section {
-		padding: 1em;
-	}
-	p {
-		font-size: 14px;
 	}
 	#signature {
 		margin-top: 20px;
 		width: 100px;
 	}
 }
-
+@media screen and (min-width: 481px) {
+	.project-thumbnail {
+		overflow: hidden;
+		float: left;
+		width: 50%;
+		margin-bottom: 1.5em;
+	}
+	.project-thumbnail:nth-of-type(2n) {
+		padding-left: 2.5%;
+	}
+	.project-thumbnail:nth-of-type(2n-1) {
+		clear: both;
+		padding-right: 2.5%;
+	}
+	.project-thumbnail p {
+		font-size: 0.8em;
+	}
+}
 @media screen and (min-width: 1200px) {
-	p {
-		font-size: 24px;
+	body {
+		font-size: 24pt;
 	}
 }
