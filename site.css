@@ -28,25 +28,18 @@ a {
 	text-decoration: none;
 }
 
+h1 {
+	text-transform: uppercase;
+}
+h1 .light {
+	text-transform: none;
+	font-weight: 200;
+}
+
 p {
 	text-align: justify;
 	font-size: 16pt;
 	line-height: 1.5;
-}
-
-/*strong*/.small-caps {
-	margin-right: 10px;
-	font-family: sans-serif;
-	font-weight: bold;
-	font-size: .7em;
-	text-transform: uppercase;
-}
-
-mark {
-	color: #fff;
-	background: #232323;
-	/*position: absolute;*/
-	/*right: 100%;*/
 }
 
 .hidden {
@@ -73,12 +66,37 @@ mark {
 	z-index: 2;
 }
 
-.section {
+.section, .major-section {
 	overflow: hidden;
 	margin-bottom: 2em;
 }
-.section img {
+.section img, .major-section img {
 	margin-bottom: 1em;
+}
+
+.major-section {
+	border-top: 1px solid #666;
+	padding-top: 1em;
+}
+.major-section h1 {
+	margin-bottom: 1em;
+}
+
+.project-thumbnail {
+	overflow: hidden;
+	float: left;
+	width: 50%;
+	margin-bottom: 1em;
+}
+.project-thumbnail:nth-of-type(2n) {
+	padding-left: 2.5%;
+}
+.project-thumbnail:nth-of-type(2n-1) {
+	clear: both;
+	padding-right: 2.5%;
+}
+.project-thumbnail p {
+	font-size: .8em;
 }
 
 #signature {
