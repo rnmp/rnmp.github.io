@@ -19,8 +19,8 @@ img, object, embed {
 
 body {
 	font: 200 16pt/18pt 'Ideal Sans SSm A', 'Ideal Sans SSm B', sans-serif;
-	background: #fffef8;
-	color: #232323;
+	background: #fffffe;
+	color: #131313;
 }
 
 a {
@@ -29,11 +29,11 @@ a {
 }
 
 h1 {
+	margin-bottom: 1em;
+	font-family: 'Idlewild A', 'Idlewild B';
+	font-weight: 800;
+	font-style: normal;
 	text-transform: uppercase;
-}
-h1 .light {
-	text-transform: none;
-	font-weight: 200;
 }
 
 p {
@@ -85,9 +85,6 @@ hr {
 .major-section {
 	padding-top: 1em;
 }
-.major-section h1 {
-	margin-bottom: 1em;
-}
 
 #signature {
 	float: right;
@@ -96,13 +93,14 @@ hr {
 
 @media screen and (max-width: 480px) {
 	body {
+		padding-top: 1em;
 		font-size: 12pt;
 	}
 	p {
 		padding: 1em;
 		padding-top: 0;
 	}
-	.major-section > h1 {
+	h1 {
 		padding-left: 1em;
 	}
 	.canvas {
