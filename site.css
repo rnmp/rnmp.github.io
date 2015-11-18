@@ -19,6 +19,9 @@ img, object, embed {
 
 body {
 	font: 200 16pt/18pt 'Ideal Sans SSm A', 'Ideal Sans SSm B', sans-serif;
+	/*font: 200 16pt/18pt 'Helvetica Neue', sans-serif;*/
+	font-style: normal;
+	font-weight: 200;
 	background: #fffffe;
 	color: #131313;
 }
@@ -30,13 +33,20 @@ a {
 
 h1 {
 	margin-bottom: 1em;
-	font-family: 'Idlewild A', 'Idlewild B';
-	font-weight: 800;
+	/*font-family: 'Knockout 54 A', 'Knockout 54 B';*/
+	font-family: 'Knockout 54 A', 'Knockout 54 B', sans-serif;
+	font-weight: 400;
 	font-style: normal;
-	text-transform: uppercase;
+	font-size: .5em;
+	letter-spacing: .2em;
+	/*text-transform: uppercase;*/
+	text-transform: lowercase;
 }
 
 p {
+	font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B', sans-serif;
+	font-weight: 200;
+	font-style: normal;
 	font-size: 1em;
 	line-height: 1.5;
 }
