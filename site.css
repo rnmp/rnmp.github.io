@@ -31,15 +31,17 @@ a {
 	text-decoration: none;
 }
 
+
 h1 {
+	font-weight: inherit;
+}
+.major-section > h1 {
 	margin-bottom: 1em;
-	/*font-family: 'Knockout 54 A', 'Knockout 54 B';*/
 	font-family: 'Knockout 54 A', 'Knockout 54 B', sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	font-size: .5em;
 	letter-spacing: .2em;
-	/*text-transform: uppercase;*/
 	text-transform: lowercase;
 }
 
@@ -82,18 +84,23 @@ p {
 .section img, .major-section img {
 	margin-bottom: 1em;
 }
+.major-section > article {
+	border-left: .25em solid #eee;
+	padding: .5em 0 .25em 1em;
+}
+article h1 {
+	margin-bottom: 0.5em;
+}
+time {
+	color: #999;
+}
 
 hr {
 	position: relative;
 	top: -1em;
 	width: 5%;
 	margin: auto;
-}
-.major-section, hr {
 	border-top: 1px solid #666;
-}
-.major-section {
-	padding-top: 1em;
 }
 
 #signature {
