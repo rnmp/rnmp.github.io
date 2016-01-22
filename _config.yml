@@ -1,7 +1,7 @@
 # Site settings
 title: Rolando Murillo
 email: rolando@bandd.co
-description: "Rolando Murillo. Designer, front-end developer & entrepreneur."
+description: "Rolando Murillo. Designer, front-end developer and entrepreneur."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://rolandomurillo.com" # the base hostname & protocol for your site
 twitter_username: rnmp
