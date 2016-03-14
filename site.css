@@ -18,9 +18,8 @@ img, object, embed {
 }
 
 body {
-	font: 200 16pt/1.5 'Ideal Sans SSm A', 'Ideal Sans SSm B', sans-serif;
+	font: 300 16pt/1.5 'Open Sans', sans-serif;
 	font-style: normal;
-	font-weight: 200;
 	background: #fffffe;
 	color: #131313;
 }
@@ -55,12 +54,11 @@ hr {
 
 .major-section > h1 {
 	margin-bottom: 1em;
-	font-family: 'Knockout 54 A', 'Knockout 54 B', sans-serif;
-	font-weight: 400;
 	font-style: normal;
+	font-weight: 800;
 	font-size: .5em;
 	letter-spacing: .2em;
-	text-transform: lowercase;
+	text-transform: uppercase;
 }
 
 .hidden {
