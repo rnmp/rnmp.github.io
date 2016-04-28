@@ -137,7 +137,8 @@ hr {
 		padding-top: 0;
 	}
 	h1 {
-		padding-left: 1em;
+		padding-left: 0;
+		text-align: center;
 	}
 	.canvas {
 		width: 100%;
