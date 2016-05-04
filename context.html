@@ -1,0 +1,41 @@
+---
+layout: false
+published: true
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Current Task</title>
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+		<script>
+			var task = localStorage.getItem("task") || 'Write the task you want to focus on…';
+			$(function(){
+				$('body').text(task)
+				$('body').on('keyup', function(e){
+					localStorage.setItem("task", $('body').text());
+				});
+			});
+		</script>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				background: #897aff;
+				color: #fff;
+				font: 48vh/100vh 'Helvetica Neue', sans-serif;
+				text-align: center;
+				font-weight: bold;
+				letter-spacing: -0.025em;
+			}
+			body::before {
+				content: 'You should be doing –> ';
+				color: #000;
+				opacity: 0.3;
+			}
+		</style>
+	</head>
+	<body contenteditable>
+		Write the task you want to focus on…
+	</body>
+</html>
