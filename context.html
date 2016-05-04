@@ -9,12 +9,23 @@ published: true
 		<title>Current Task</title>
 		<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 		<script>
-			var task = localStorage.getItem("task") || 'Write the task you want to focus on…';
+			var task = localStorage.getItem("task") || $('body').text();
+			var randomColor = function(){
+				return Math.floor(Math.random()*16777215).toString(16);
+			};
+			var setBodyBackgroundColor = function(){
+				$('body').css('background-color', '#'+randomColor())
+			};
 			$(function(){
 				$('body').text(task)
 				$('body').on('keyup', function(e){
 					localStorage.setItem("task", $('body').text());
 				});
+
+				setBodyBackgroundColor()
+				setInterval(function(){
+					setBodyBackgroundColor()
+				}, 30000)
 			});
 		</script>
 		<style>
@@ -31,7 +42,7 @@ published: true
 			body::before {
 				content: 'You should be doing –> ';
 				color: #000;
-				opacity: 0.3;
+				opacity: 0.5;
 			}
 		</style>
 	</head>
