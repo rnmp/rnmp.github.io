@@ -16,16 +16,21 @@ published: true
 			var setBodyBackgroundColor = function(){
 				$('body').css('background-color', '#'+randomColor())
 			};
+
 			$(function(){
 				$('body').text(task)
 				$('body').on('keyup', function(e){
 					localStorage.setItem("task", $('body').text());
 				});
 
-				setBodyBackgroundColor()
-				setInterval(function(){
-					setBodyBackgroundColor()
-				}, 30000)
+				setBodyBackgroundColor();
+				(function loop() {
+				    var rand = Math.round(Math.random() * 600000);
+				    setTimeout(function() {
+						setBodyBackgroundColor();
+				        loop();  
+				    }, rand);
+				}());
 			});
 		</script>
 		<style>
