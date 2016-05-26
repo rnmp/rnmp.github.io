@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Views on Design — Rolando Murillo
+title: My Views on Design
 permalink: "/my-views-on-design/"
 published: true
 ---
@@ -24,7 +24,7 @@ The more time you dedicate in learning and understanding these different spectru
 # Help people understand design / teaching is great
 
 # Mininum Viable Product
-T
+
 
 # Enough is more
 
