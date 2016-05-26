@@ -1,7 +1,8 @@
 ---
 layout: post
 title: My Views on Design — Rolando Murillo
-permalink: /my-views-on-design/
+permalink: "/my-views-on-design/"
+published: true
 ---
 
 I’m writing the following to document the concepts and "views" on design that stood out to me in the past few years and I think are worth sharing. While I'm personally unable to sit down and say "This is my design process—", these principles guide me through the products I create.
@@ -18,7 +19,7 @@ This elaboration very much aligns with the concept of product design: product de
 # Everything that your product conveys is design
 What is more: the API of the code behind your digital product is design. The content strategy to create traction for it is design. The way the customer service behaves is design. The pricing is design. EVERYTHING is design. Even if you're not personally responsible for some of these aspects of what you're building with your team, the _direction_ that you give and your contributions to them should be part of your process. 
 
-The more time you dedicate in learning and understanding these different spectrums (even if they're not your area of expertise) the more equipped you will be to communicate your creative approaches with different teams. In the end, the result will be more consistent, your voice will be more present throughout the experience of your customers. The level attention that you give to different aspects is up to you and depend entirely on the product.
+The more time you dedicate in learning and understanding these different spectrums (even if they're not your area of expertise) the more equipped you will be to communicate your creative approaches with different teams. In the end, the result will be more consistent, your voice will be more present throughout the experience of your customers. The level attention that you give to different aspects is up to you and depends entirely on the product.
 
 # Help people understand design / teaching is great
 
