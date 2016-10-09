@@ -1,7 +1,8 @@
 ---
 layout: post
-title: My Views on Design — Rolando Murillo
-permalink: /my-views-on-design/
+title: My Views on Design
+permalink: "/my-views-on-design/"
+published: true
 ---
 
 I’m writing the following to document the concepts and "views" on design that stood out to me in the past few years and I think are worth sharing. While I'm personally unable to sit down and say "This is my design process—", these principles guide me through the products I create.
@@ -26,6 +27,8 @@ The more time you dedicate in learning and understanding these different spectru
 
 # Minimum Viable Product
 What the concept of MVP means translates to implementing your design in the least amount of time possible. This provides modularity/granularity when priorities shift rapidly and reduces the chances of not being properly informed. Makes you more reactive.
+
+The more time you dedicate in learning and understanding these different spectrums (even if they're not your area of expertise) the more equipped you will be to communicate your creative approaches with different teams. In the end, the result will be more consistent, your voice will be more present throughout the experience of your customers. The level attention that you give to different aspects is up to you and depends entirely on the product.
 
 # Enough is more
 
