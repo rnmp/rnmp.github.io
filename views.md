@@ -34,3 +34,12 @@ What the concept of MVP means translates to implementing your design in the leas
 # Gut feelings: design is an art too
 
 # Data is tool, not a dogma
+
+Right now I feel like giving organizations more instruction in terms of needs is key. Needs Menu. Need to figure out how to test it.
+
+1. We can literally add a banner on Tuesday. See if people even click it. Silent response. Check visits per day.
+2. How to frame the Landing Page we're sending to close lost leads so that we learn whether giving instruction in terms of different topics works.
+3. Making ADDITIONAL CONTEXT optional and rephrase it.
+
+If we define Test A (Project Menu) then we need to have "B" for control.
+

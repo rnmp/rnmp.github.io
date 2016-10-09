@@ -129,6 +129,9 @@ hr {
 /*article*/.resume-experience {
 	margin-bottom: 1em;
 }
+/*article*/.resume-experience strong {
+	font-weight: 400;
+}
 /*article*/.resume-experience h1 {
 	color: #232323;
 }
@@ -183,5 +186,18 @@ hr {
 	}
 	.major-section > h1, .post h1 {
 		font-size: 16px;
+	}
+}
+@media print {
+	body {
+		font-size: 9pt;
+	}
+	.canvas {
+		width: auto;
+		margin: .45in 1in;
+		padding: 0;
+	}
+	#signature {
+		display: none;
 	}
 }
