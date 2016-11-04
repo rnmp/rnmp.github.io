@@ -35,7 +35,7 @@ img, object, embed {
 body {
 	font: 300 16pt/1.4 'Source Sans Pro', sans-serif;
 	font-style: normal;
-	background: #fffffe;
+	background: #fbfbfb;
 	color: #131313;
 }
 
@@ -138,6 +138,15 @@ hr {
 /*article*/.resume-experience p,
 /*article*/.resume-experience ul {
 	color: #666;
+}
+
+.colors {
+	list-style-type: none;
+}
+.colors li {
+	float: left;
+	width: 33.333%;
+	padding: 1% 2%;
 }
 
 @media screen and (max-width: 480px) {
