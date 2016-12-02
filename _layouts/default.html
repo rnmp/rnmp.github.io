@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body>
+  <body class="{{ page.body_class }}">
     <div class="canvas">
+      <nav>
+	    <a href="/" {% if page.url == '/' %} class="active"{% endif %}>about</a>
+      	<a href="/work/" {% if page.url == '/work/' %} class="active"{% endif %}>work</a>
+      	<a href="/projects/" {% if page.url == '/projects/' %} class="active"{% endif %}>projects</a>
+      </nav>
       <a href="{{ site.url }}" id="signature"><img src="/img/signature.png" alt="Rolando Murillo"></a>
       {{ content }}
     </div>

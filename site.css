@@ -38,6 +38,13 @@ body {
 	background: #fbfbfb;
 	color: #131313;
 }
+body.mula_case_study {
+	background: #222;
+	color: #fff;
+}
+body.mula_case_study #signature {
+	filter: invert();
+}
 
 a {
 	color: red;
@@ -48,8 +55,12 @@ h1 {
 	font-weight: inherit;
 }
 
-p:not(:last-child), ul:not(:last-child), blockquote:not(:last-child) {
+p:not(:last-child), ul:not(:last-child), ol:not(:last-child), blockquote:not(:last-child) {
 	margin-bottom: 1em;
+}
+
+/*p*/.hero {
+	font-size: 1.5em;
 }
 
 hr {
@@ -59,6 +70,15 @@ hr {
 	margin: auto;
 	border-top: 1px solid #666;
 }
+nav {
+	margin-bottom: 5%;
+}
+nav a {
+	margin-right: 5%;
+}
+nav a.active {
+	color: inherit;
+}
 
 #signature {
 	position: fixed;
@@ -67,7 +87,7 @@ hr {
 	width: 160px;
 }
 
-.major-section > h1, .post h1 {
+.major-section > h1, .post h1, nav a, article h1, .label {
 	margin-bottom: 1em;
 	font-family: 'Knockout';
 	font-weight: normal;
@@ -154,11 +174,18 @@ hr {
 		padding-top: 1em;
 		font-size: 12pt;
 	}
+	nav {
+		text-align: center;
+	}
+	nav a {
+		font-size: 10px;
+		margin: 0 5%;
+	}
 	p {
 		padding: 1em;
 		padding-top: 0;
 	}
-	h1 {
+	h1  {
 		padding-left: 0;
 		text-align: center;
 	}
@@ -193,13 +220,16 @@ hr {
 	body {
 		font-size: 24pt;
 	}
-	.major-section > h1, .post h1 {
+	.major-section > h1, .post h1, article h1 {
 		font-size: 16px;
 	}
 }
 @media print {
 	body {
 		font-size: 10pt;
+	}
+	nav {
+		display: none;
 	}
 	.canvas {
 		width: auto;
