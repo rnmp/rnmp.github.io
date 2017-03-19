@@ -87,7 +87,7 @@ nav a.active {
 	width: 160px;
 }
 
-.major-section > h1, .post h1, nav a, article h1, .label {
+.major-section > h1, .post h1, nav a, .section h1, .label {
 	margin-bottom: 1em;
 	font-family: 'Knockout';
 	font-weight: normal;
@@ -220,7 +220,7 @@ nav a.active {
 	body {
 		font-size: 24pt;
 	}
-	.major-section > h1, .post h1, article h1 {
+	.major-section > h1, .post h1, .section h1 {
 		font-size: 16px;
 	}
 }
