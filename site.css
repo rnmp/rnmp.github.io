@@ -35,7 +35,7 @@ img, object, embed {
 body {
 	font: 300 16pt/1.4 'Source Sans Pro', sans-serif;
 	font-style: normal;
-	background: #fbfbfb;
+	background: #fbfbfb linear-gradient(to bottom, rgba(255, 50, 50, 0.0333) 0%, rgba(255, 244, 40, 0.0333) 16%, rgba(62, 255, 40, 0.0333) 32%, rgba(50, 255, 255, 0.0333) 48%, rgba(50, 54, 255, 0.0333) 64%, rgba(255, 50, 241, 0.0333) 80%);
 	color: #131313;
 }
 body.mula_case_study {
@@ -80,11 +80,8 @@ nav a.active {
 	color: inherit;
 }
 
-#signature {
-	position: fixed;
-	right: 10%;
-	bottom: 10%;
-	width: 160px;
+ul {
+	list-style-type: none;
 }
 
 .major-section > h1, .post h1, nav a, .section h1, .label {
@@ -130,11 +127,11 @@ nav a.active {
 }
 
 .section, .major-section {
-	overflow: hidden;
 	margin-bottom: 2em;
 }
 .section img, .major-section img {
 	margin-bottom: 1em;
+	box-shadow: 0 5px 10px rgba(0,0,0, 0.06);
 }
 
 /*article*/.last-post,
@@ -200,7 +197,6 @@ nav a.active {
 }
 @media screen and (min-width: 481px) {
 	.project-thumbnail {
-		overflow: hidden;
 		float: left;
 		width: 50%;
 		margin-bottom: 1.5em;
