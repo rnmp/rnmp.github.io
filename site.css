@@ -33,17 +33,37 @@ img, object, embed {
 }
 
 body {
-	font: 300 16pt/1.4 'Source Sans Pro', sans-serif;
+	font: 300 16px/1.4 'Source Sans Pro', sans-serif;
 	font-style: normal;
-	background: #fbfbfb linear-gradient(to bottom, rgba(255, 50, 50, 0.0333) 0%, rgba(255, 244, 40, 0.0333) 16%, rgba(62, 255, 40, 0.0333) 32%, rgba(50, 255, 255, 0.0333) 48%, rgba(50, 54, 255, 0.0333) 64%, rgba(255, 50, 241, 0.0333) 80%);
-	color: #131313;
+
+	letter-spacing: -0.0075em;
+	word-spacing: 0.15em;
+
+	color: #000;
+
+	background: #fbfbfb; 
 }
-body.mula_case_study {
-	background: #222;
-	color: #fff;
-}
-body.mula_case_study #signature {
-	filter: invert();
+body:before {
+	content: "";
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+
+	background: #fff no-repeat center center linear-gradient(
+		                          -35deg, 
+		rgba(255,  50,  50, 0.04)   0%, 
+		rgba(255, 244,  40, 0.04)  25%, 
+		rgba( 62, 255,  40, 0.04)  45%, 
+		rgba( 50, 255, 255, 0.04)  55%, 
+		rgba( 50,  54, 255, 0.04)  80%, 
+		rgba(255,  50, 241, 0.04) 100%
+		/* Yep, it’s a rainbow. */
+	);
+  	background-size: cover; 
 }
 
 a {
@@ -55,7 +75,10 @@ h1 {
 	font-weight: inherit;
 }
 
-p:not(:last-child), ul:not(:last-child), ol:not(:last-child), blockquote:not(:last-child) {
+p:not(:last-child), 
+ul:not(:last-child), 
+ol:not(:last-child), 
+blockquote:not(:last-child) {
 	margin-bottom: 1em;
 }
 
@@ -84,7 +107,11 @@ ul {
 	list-style-type: none;
 }
 
-.major-section > h1, .post h1, nav a, .section h1, .label {
+img {
+	box-shadow: 0 5px 10px rgba(0,0,0, 0.075);
+}
+
+nav a, .major-section > h1,  .section h1, .label {
 	margin-bottom: 1em;
 	font-family: 'Knockout';
 	font-weight: normal;
@@ -93,29 +120,14 @@ ul {
 	text-transform: uppercase;
 }
 
-.post > p:first-of-type {
-	font-size: 1.25em;
-}
-
-.post h1 {
-	margin-top: 4em;
-	margin-bottom: .5em;
-}
-
-.hidden {
-	display: none;
-}
-
-.column {
-	float: left;
-}
-
-.width-1of2 {
-	width: 50%;
-}
-
 .fit {
 	width: 100%;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .canvas {
@@ -131,16 +143,10 @@ ul {
 }
 .section img, .major-section img {
 	margin-bottom: 1em;
-	box-shadow: 0 5px 10px rgba(0,0,0, 0.06);
 }
 
-/*article*/.last-post,
-.post blockquote {
-	border-left: .25em solid #eee;
-	padding: .5em 0 .25em 1em;
-}
-/*article*/.last-post time {
-	color: #999;
+.link-list a {
+	margin-right: 0.25em;
 }
 
 /*article*/.resume-experience {
@@ -157,29 +163,26 @@ ul {
 	color: #666;
 }
 
-.colors {
-	list-style-type: none;
-}
-.colors li {
-	float: left;
-	width: 33.333%;
-	padding: 1% 2%;
-}
-
+/* S M A L L   S C R E E N S */
 @media screen and (max-width: 480px) {
 	body {
 		padding-top: 1em;
-		font-size: 12pt;
+		font-size: 18px;
 	}
 	nav {
-		text-align: center;
+		padding: 15px 1.2em 50px;
 	}
+	
 	nav a {
+		float: left;
+		width: 50%;
 		font-size: 10px;
-		margin: 0 5%;
+		text-align: center;
+		margin: 0;
+		line-height: 25px;
 	}
 	p {
-		padding: 1em;
+		padding: 1.2em;
 		padding-top: 0;
 	}
 	h1  {
@@ -190,12 +193,21 @@ ul {
 		width: 100%;
 		padding: 0;
 	}
-	#signature {
-		margin-top: 20px;
-		width: 100px;
+	.link-list {
+		padding-left:  3.5em;
+		padding-right: 3.5em;
 	}
 }
+
+/* M E D I U M   S C R E E N S */
 @media screen and (min-width: 481px) {
+	body {
+		font-size: 32px;
+	}
+	.major-section > h1, .post h1, .section h1 {
+		font-size: 16px;
+	}
+
 	.project-thumbnail {
 		float: left;
 		width: 50%;
@@ -212,14 +224,8 @@ ul {
 		font-size: 0.8em;
 	}
 }
-@media screen and (min-width: 1200px) {
-	body {
-		font-size: 24pt;
-	}
-	.major-section > h1, .post h1, .section h1 {
-		font-size: 16px;
-	}
-}
+
+/* P R I N T */
 @media print {
 	body {
 		font-size: 10pt;
