@@ -54,12 +54,12 @@ body:before {
 
 	background: #fff no-repeat center center linear-gradient(
 		                          -35deg, 
-		rgba(255,  50,  50, 0.055)   0%, 
-		rgba(255, 244,  40, 0.055)  25%, 
-		rgba( 62, 255,  40, 0.055)  45%, 
-		rgba( 50, 255, 255, 0.055)  55%, 
-		rgba( 50,  54, 255, 0.055)  80%, 
-		rgba(255,  50, 241, 0.055) 100%
+		rgba(255,  50,  50, 0.04)   0%, 
+		rgba(255, 244,  40, 0.04)  25%, 
+		rgba( 62, 255,  40, 0.04)  45%, 
+		rgba( 50, 255, 255, 0.04)  55%, 
+		rgba( 50,  54, 255, 0.04)  80%, 
+		rgba(255,  50, 241, 0.04) 100%
 		/* Yep, it’s a rainbow. */
 	);
   	background-size: cover; 
