@@ -22,6 +22,15 @@
 	box-sizing: border-box;
 }
 
+::selection {
+  background: red;
+  color: #fff;
+}
+::-moz-selection {
+  background: red;
+  color: #fff;
+}
+
 aside, footer, figure, header,
 section, img, object, embed {
 	display: block;
