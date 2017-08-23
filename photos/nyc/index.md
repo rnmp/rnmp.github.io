@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: photos
 title: NYC (to be renamed)
 permalink: "/photos/nyc/"
 published: true

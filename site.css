@@ -51,7 +51,7 @@ body {
 
 	background: #fbfbfb; 
 }
-body:before {
+body:not(.photos):before {
 	content: "";
 	display: block;
 	position: fixed;
@@ -72,6 +72,14 @@ body:before {
 		/* Yep, it’s a rainbow. */
 	);
   	background-size: cover; 
+}
+
+body.photos {
+  background: black;
+}
+
+body.photos a {
+  color: white;
 }
 
 a {

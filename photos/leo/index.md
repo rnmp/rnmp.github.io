@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: photos
 title: Leo
 permalink: "/photos/leo/"
 published: true
