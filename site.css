@@ -125,7 +125,8 @@ h6,
 }
 
 nav a,
-.label {
+.label,
+.intro h1 {
     text-transform: uppercase;
     font-family: "Chivo";
     letter-spacing: 0.25em;
@@ -189,8 +190,9 @@ h6,
 }
 
 .intro h1 {
-    font-weight: bold;
     font-style: italic;
+    white-space: normal;
+    font-size: 24px;
 }
 
 /* Project Content */
@@ -222,6 +224,10 @@ h6,
 
     .label {
         font-size: 13px;
+    }
+
+    .intro h1 {
+        font-size: 48px;
     }
 
     h1,
