@@ -70,13 +70,13 @@ permalink: /work/
 
   <section class="project column">
       <a href="http://mistura.pe/" target="_blank"><img src="/img/work/mistura.svg" alt="Mistura"></a>
-    <p><a href="http://mistura.pe/" target="_blank">Mistura</a> is the biggest food festival in Peru.</p>
+    <p><a href="http://mistura.pe/" target="_blank">Mistura</a> is the biggest food festival in Lima, Peru.</p>
     <footer><small class="label">Front-end Development</small></footer>
   </section>
 
   <section class="project column">
       <a href="http://istore.pe/" target="_blank"><img src="/img/work/istore.svg" alt="iStore"></a>
-    <p>iStore was the first Peruvian <a href="https://www.apple.com/lae/reseller/apr/" target="_blank">Apple PR</a>.</p>
+    <p>iStore was the first Apple retail store in Lima, Peru.</p>
     <footer><small class="label">Web Design</small> + <small class="label">Front-end Development</small></footer>
   </section>
 

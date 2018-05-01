@@ -10,7 +10,7 @@ permalink: /projects/
     <h1>Sensive</h1>
     <img src="/img/sensive-1.png" alt="Sensive">
     <img src="/img/sensive-2.png" alt="Sensive ">
-    <p>Track <a href="https://figma.com/" target="_blank">Figma</a> files within a team and displays live updates.</p>
+    <p>Tracks <a href="https://figma.com/" target="_blank">Figma</a> files within a team and displays live updates.</p>
     <footer><small class="label">Design</small> + <small class="label">Rails & ReactJS Development</small></footer>
   </section>
   <section class="project">
