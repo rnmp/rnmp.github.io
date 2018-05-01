@@ -28,19 +28,19 @@ permalink: /work/
 
   <section class="project column">
     <img src="/img/ubalo.png" alt="Ubalo">
-    <p>Ubalo (<em>offline, <a href="https://techcrunch.com/2013/05/09/twitter-acquires-palo-alto-based-scalable-computing-startup-ubalo/" target="_blank">acquired by Twitter</a></em>) was a cloud-based numerical computing startup.</p>
+    <p>Ubalo (<em><a href="https://techcrunch.com/2013/05/09/twitter-acquires-palo-alto-based-scalable-computing-startup-ubalo/" target="_blank">acquired by Twitter</a></em>) was a cloud-based computing startup.</p>
     <footer><small class="label">Front-end Development</small></footer>
   </section>
 
   <section class="project column">
     <a href="https://cherrypy.org/" target="_blank"><img src="/img/cherrypy.png" alt="CherryPy"></a>
-    <p><a href="https://cherrypy.org/" target="_blank">CherryPy</a> is a lightweight framework for building web platforms using Python.</p>
+    <p><a href="https://cherrypy.org/" target="_blank">CherryPy</a> is a minimalist Python web framework.</p>
     <footer><small class="label">Web Design</small> + <small class="label">Front-end Development</small></footer>
   </section>
 
   <section class="project column">
     <img src="/img/parachutes.svg" alt="Parachutes">
-    <p>Parachutes.org (<em>offline</em>) was a new venture from Co-Founder of Etsy.org, Rob Kalin. A talent hunting platform integrated with challenges created by companies hiring.</p>
+    <p>Parachutes.org (<em>offline</em>) was a new venture from a Co-Founder of Etsy.</p>
     <footer><small class="label">Product Design</small> + <small class="label">Front-end Development</small></footer>
   </section>
 
@@ -58,13 +58,13 @@ permalink: /work/
 
   <section class="project column">
       <a href="http://lucumalabs.com/" target="_blank"><img src="/img/lucuma.png" alt="Lúcuma Labs"></a>
-    <p><a href="http://lucumalabs.com/" target="_blank">Lúcuma Labs</a> is an award-winning design and user experience agency based in Peru.</p>
+    <p><a href="http://lucumalabs.com/" target="_blank">Lúcuma Labs</a> is a design and user experience agency based in Peru.</p>
     <footer><small class="label">UX Design</small> + <small class="label">Front-end Development</small></footer>
   </section>
 
   <section class="project column">
       <img src="/img/xenda.svg" alt="Xenda">
-    <p>Xenda was a software development agency.</p>
+    <p>Xenda was a software development agency in Peru.</p>
     <footer><small class="label">Product Design</small> + <small class="label">Front-end Development</small></footer>
   </section>
 
