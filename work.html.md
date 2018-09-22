@@ -4,8 +4,14 @@ permalink: "/work/"
 layout: default
 ---
 
-<section>
-  <header class="label h5">Currently</header>
+<section class="group">
+  <header>
+    <h1 class="label h5">Previously</h1>
+    <h2 class="h1">Consulting</h2>
+  </header>
+
+  <section>
+  <header class="label h5">Previously</header>
   <section class="project">
     <h1>Catchafire</h1>
     <a href="http://www.catchafire.org/" target="_blank"><img src="/img/catchafire.png" alt="Catchafire"></a>
@@ -13,12 +19,6 @@ layout: default
     <footer><small class="label">UX Design</small> + <small class="label">Product Management</small> + <small class="label">Front-end Development</small></footer>
   </section>
 </section>
-
-<section class="group">
-  <header>
-    <h1 class="label h5">Previously</h1>
-    <h2 class="h1">Consulting</h2>
-  </header>
 
   <section class="project column">
     <a href="https://yachay.pe/" target="_blank"><img src="/img/yachay.png" alt="Yachay"></a>
