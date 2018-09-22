@@ -1,8 +1,7 @@
 ---
-layout: photos
 title: Leo
 permalink: "/photos/leo/"
-published: true
+layout: photos
 ---
 
 ![](leo2.jpg)

@@ -1,8 +1,7 @@
 ---
-layout: post
 title: My Views on Design
 permalink: "/my-views-on-design/"
-published: true
+layout: post
 ---
 
 I’m writing the following to document the concepts and "views" on design that stood out to me in the past few years and I think are worth sharing. While I'm personally unable to sit down and say "This is my design process—", these principles guide me through the products I create.

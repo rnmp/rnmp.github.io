@@ -1,7 +1,7 @@
 ---
+title: List of Stuff — Rolando Murillo
+permalink: "/list-of-stuff/"
 layout: default
-title:  List of Stuff — Rolando Murillo
-permalink: /list-of-stuff/
 ---
 
 # List of Stuff

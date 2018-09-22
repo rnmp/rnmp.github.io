@@ -1,8 +1,7 @@
 ---
-layout: photos
 title: NYC (to be renamed)
 permalink: "/photos/nyc/"
-published: true
+layout: photos
 ---
 
 ![](Diego0001.jpeg)

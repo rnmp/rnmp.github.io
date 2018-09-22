@@ -1,7 +1,7 @@
 ---
+title: Checklist — Rolando Murillo
+permalink: "/checklist/"
 layout: default
-title:  Checklist — Rolando Murillo
-permalink: /checklist/
 ---
 
 # Work of Effort

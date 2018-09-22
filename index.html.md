@@ -1,8 +1,7 @@
 ---
+title: Product Designer + Front-end Developer
+permalink: "/"
 layout: default
-published: true
-permalink: /
-title: 'Product Designer + Front-end Developer'
 ---
 
 <section class="intro">

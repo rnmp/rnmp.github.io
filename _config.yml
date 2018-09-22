@@ -1,11 +1,17 @@
-# Site settings
+---
 title: Rolando Murillo
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: rolando@bandd.co
-description: "Creating delightful & effective digital experiences"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://rolandomurillo.com" # the base hostname & protocol for your site
+description: Creating delightful & effective digital experiences
+baseurl: ''
+url: http://rolandomurillo.com
 twitter_username: rnmp
-github_username:  rnmp
-
-# Build settings
+github_username: rnmp
 markdown: kramdown
