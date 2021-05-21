@@ -8,8 +8,8 @@ collections:
   uploads:
     title: Uploads
     output: true
-email: rolando@bandd.co
+email: rolandomurillo@hey.com
 description: Product Designer and Engineer Based in New York City
 baseurl: ''
-url: http://rolandomurillo.com
+url: https://rolandomurillo.com
 markdown: kramdown
