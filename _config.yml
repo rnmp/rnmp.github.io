@@ -12,6 +12,11 @@ collections:
 defaults:
   - scope:
       path: ""
+      type: photos
+    values:
+      layout: photo
+  - scope:
+      path: ""
       type: posts
     values:
       layout: post
