@@ -4,10 +4,15 @@ timezone: UTC
 collections:
   posts:
     title: Posts
+    layout: post
+    permalink: /:categories/:year/:month/:day/:title
     output: true
-  uploads:
-    title: Uploads
-    output: true
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 email: rolandomurillo@hey.com
 description: Product Designer and Engineer Based in New York City
 baseurl: ''
