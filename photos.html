@@ -1,0 +1,16 @@
+---
+title: Photos
+layout: default
+permalink: "/photos/"
+---
+
+<main>
+  <h1>Photos</h1>
+  {% assign photos = site.collections | where: "label", "photos" | first  %}
+  {% assign sorted_photo_files = photos.files | sort: "basename" | reverse %}
+  <div class="post">
+    {% for photo in sorted_photo_files %}
+      <img src="/photos/{{ photo.name }}" />
+    {% endfor %}
+  </div>
+</main>
