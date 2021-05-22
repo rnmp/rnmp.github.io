@@ -1,4 +1,4 @@
-name: Release Site
+name: Release
 
 on:
   push:
@@ -13,3 +13,4 @@ jobs:
       - uses: helaili/jekyll-action@v2
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          target_branch: 'gh-pages'
