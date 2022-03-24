@@ -29,9 +29,9 @@ a[href] {
   color: #ff2e00;
   text-decoration: none;
 }
-a[href]:visited {
-  color: #999;
-}
+/* a[href]:visited { */
+/*   color: #999; */
+/* } */
 
 a[href]:hover {
   background: #ff2e00;
@@ -39,6 +39,7 @@ a[href]:hover {
 }
 
 .small-caps {
+  color: #ff2e00;
   font-weight: bold;
   letter-spacing: 0.333333em;
   text-transform: uppercase;
@@ -63,6 +64,7 @@ header {
   flex-direction: column;
 }
 .site-blurb {
+  color: #ff2e00;
   margin-top: 0;
   font-size: 1.5rem;
   font-weight: normal;
