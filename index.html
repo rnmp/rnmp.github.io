@@ -3,27 +3,22 @@ layout: default
 ---
 
 <main class="hairline">
-  <header>
-    <h1 class="site-blurb">Hi, I’m Rolando. I build digital products with compassion.</h1>
+  <header class="site-blurb">
+    Hi, I’m Rolando. I build digital products with compassion.
   </header>
-  <section>
-    <header class="small-caps">Updates</header>
+  <section class="homepage-posts">
     {% for post in site.posts limit:10 %}
-      {% comment %}
-        TODO: Decide whether this makes sense
-        {% capture day %}{{ post.date | date: '%m%d%Y' }}{% endcapture %}
-        {% capture nday %}{{ post.next.date | date: '%m%d%Y' }}{% endcapture %}
+      {% capture day %}{{ post.date | date: '%m%d%Y' }}{% endcapture %}
+      {% capture nday %}{{ post.next.date | date: '%m%d%Y' }}{% endcapture %}
 
-        {% if day != nday %}
-            <h5 class="date">{{ post.date | date: "%A, %B %e, %Y" }}</h5>
-        {% endif %}
-      {% endcomment%}
-      <article style="margin-top: 40px">
+      {% if day != nday %}
+      <header class="homepage-posts__date small-caps">{{ post.date | date_to_string }}</header>
+      {% endif %}
+
+      <article class="homepage-post">
         {% if post.link %}
           <h4 style="margin-top: 10px"><a href="{{ post.link }}" target="_blank">{{ post.title }}</a></h4>
         {% else if %}
-
-          {% unless post.link %}{{ post.date | date_to_string }}{% endunless %}
           <h3 style="margin-top: 10px">
             <a href="{{ post.url }}">{{ post.title }}</a>
           </h3>
@@ -34,7 +29,7 @@ layout: default
   </section>
 </main>
 
-<aside class="hairline">
+<aside class="hairline site-links">
   <nav>
     <dl>
       <dt class="small-caps">Work</dt>

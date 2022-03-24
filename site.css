@@ -22,16 +22,13 @@ body {
   flex-direction: column;
   font-family: "Chivo", sans-serif;
   padding: 10%;
-  /* word-break: break-word; */
+  color: #555;
 }
 
 a[href] {
   color: #ff2e00;
   text-decoration: none;
 }
-/* a[href]:visited { */
-/*   color: #999; */
-/* } */
 
 a[href]:hover {
   background: #ff2e00;
@@ -68,10 +65,10 @@ header {
   margin-top: 0;
   font-size: 1.5rem;
   font-weight: normal;
-  margin-bottom: 40px;
 }
 
-aside {
+.site-links {
+  margin-top: 80px;
   border-width: 0 0 .5px;
   flex-grow: 1;
   flex-shrink: 0;
@@ -83,6 +80,18 @@ aside {
   border-style: solid;
   border-width: .5px 0 0;
   padding-top: 5vw;
+}
+
+.homepage-posts > * + * {
+  margin-top: 20px;
+}
+
+.homepage-posts__date {
+  margin-top: 40px;
+}
+
+.homepage-post {
+  line-height: 1.5;
 }
 
 blockquote {
@@ -113,12 +122,20 @@ blockquote > p {
     font-size: 3.5rem;
   }
 
-  aside {
+  .site-links {
     margin-top: 0;
     margin-left: 10%;
   }
   .small-caps {
     font-size: 0.9rem;
+  }
+
+  .homepage-posts > * + * {
+    margin-top: 40px;
+  }
+
+  .homepage-posts__date {
+    margin-top: 80px;
   }
 }
 
