@@ -21,7 +21,7 @@ defaults:
     values:
       layout: post
 email: rolandomurillo@hey.com
-description: Product Designer and Engineer Based in New York City
+description: Digital Builder Based in New York City
 baseurl: ''
 url: https://rolandomurillo.com
 markdown: kramdown

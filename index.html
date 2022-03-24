@@ -1,35 +1,55 @@
 ---
-title: Software Engineer Based in New York City
 layout: default
 ---
 
-<header>
-  <h1>Hi 👋. I’m Rolando. I turn conversations into great products.</h1>
-  <p>rolandomurillo@hey.com</p>
-</header>
+<main class="hairline">
+  <header>
+    <h1 class="site-blurb">Hi, I’m Rolando. I build digital products with
+      compassion.</h1>
+  </header>
+  <section>
+    <header class="small-caps">Updates</header>
+    {% for post in site.posts limit:10 %}
+      <article style="margin-top: 40px">
+        {% if post.link %}
+          <h4 style="margin-top: 10px"><a href="{{ post.link }}" target="_blank">{{ post.title }}</a></h4>
+        {% else if %}
 
-<aside>
+          {% unless post.link %}{{ post.date | date_to_string }}{% endunless %}
+          <h3 style="margin-top: 10px">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </h3>
+        {% endif %}
+        {{ post.content }}
+      </article>
+    {% endfor %}
+  </section>
+</main>
+
+<aside class="hairline">
   <nav>
     <dl>
-      <dt>USA</dt>
+      <dt class="small-caps">Work</dt>
       <dd><a href="https://air.inc/" target="_blank">Air</a></dd>
       <dd><a href="https://www.bansho.com/" target="_blank">Bansho</a></dd>
       <dd><a href="https://www.careerlist.com/" target="_blank">Careerlist</a></dd>
-      <dd><a href="https://sensive.co/" target="_blank">Sensive</a></dd>
       <dd><a href="https://www.catchafire.org/" target="_blank">Catchafire</a></dd>
-      <dd><em>Coleure (Sold)</em></dd>
       <dd><em>Parachutes (Offline)</em></dd>
 
-      <dt>Perú</dt>
       <dd><a href="http://rcp.pe/" target="_blank">RCP Group</a></dd>
       <dd><a href="https://lucumalabs.com/" target="_blank">Lúcuma labs</a></dd>
-      <dd><em>Etiqueta Negra (Offline)</em></dd>
+      <dd><em>Etiqueta Negra</em></dd>
       <dd><em>iStore (Merged)</em></dd>
       <dd><em>Elka Peru (Merged)</em></dd>
 
-      <dt>Open Source</dt>
+      <dt class="small-caps">Projects</dt>
+      <dd><a href="https://bleep.is/" target="_blank">Bleep</a></dd>
+      <dd><a href="https://sensive.co/" target="_blank">Sensive</a></dd>
+      <dd><em>Coleure (Sold)</em></dd>
       <dd><a href="https://github.com/rnmp/convos" target="_blank">Convos</a></dd>
       <dd><a href="https://salvattore.js.org/" target="_blank">Salvattore</a></dd>
+      <dt class="small-caps">Contact</dt>
+      <dd>rolandomurillo@hey.com</dd>
     </dl>
   </nav>
 </aside>
