@@ -15,14 +15,16 @@ layout: default
       <header class="homepage-posts__date">{{ post.date | date_to_string }}</header>
       {% endif %}
 
-      <article class="homepage-post">
-        {% if post.link %}
-          <h4 style="margin-top: 10px"><a href="{{ post.link }}" target="_blank">{{ post.title }}</a></h4>
-        {% else if %}
-          <h3 style="margin-top: 10px">
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </h3>
-        {% endif %}
+      <article class="homepage-post post">
+        <header>
+          {% if post.link %}
+            <h4 style="margin-top: 10px"><a href="{{ post.link }}" target="_blank">{{ post.title }}</a></h4>
+          {% else if %}
+            <h3 style="margin-top: 10px">
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </h3>
+          {% endif %}
+        </header>
         {{ post.content }}
       </article>
     {% endfor %}
