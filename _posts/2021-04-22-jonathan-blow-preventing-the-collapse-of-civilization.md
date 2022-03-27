@@ -9,7 +9,7 @@ initially be well understood (e.g. a single person can read and change them) are
 now split in different services and abstractions that are harder to inherit and
 could eventually lose meaning (the collapse of civilization).
 
-I’m a bit more optimistic, but he does give a worisome example (paraphrasing):
+I’m a bit more optimistic, but he does give a worrisome example (paraphrasing):
 
 As video game engines such as Unity continue to gain popularity and custom
 engines become a rarity, will there be anyone who knows how to write them 50
