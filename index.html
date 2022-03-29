@@ -8,13 +8,6 @@ layout: default
   </header>
   <section class="homepage-posts">
     {% for post in site.posts limit:10 %}
-      {% capture day %}{{ post.date | date: '%m%d%Y' }}{% endcapture %}
-      {% capture nday %}{{ post.next.date | date: '%m%d%Y' }}{% endcapture %}
-
-      {% if day != nday %}
-      <header class="homepage-posts__date">{{ post.date | date_to_string }}</header>
-      {% endif %}
-
       <article class="homepage-post post">
         <header>
           {% if post.link %}
@@ -26,6 +19,7 @@ layout: default
           {% endif %}
         </header>
         {{ post.content }}
+        <time class="homepage-posts__date">Posted {{ post.date | date_to_string }}</time>
       </article>
     {% endfor %}
   </section>
@@ -35,6 +29,7 @@ layout: default
   <nav>
     <dl>
       <dt class="small-caps">Work</dt>
+      <dd><a href="https://www.titan.com/" target="_blank">Titan</a></dd>
       <dd><a href="https://air.inc/" target="_blank">Air</a></dd>
       <dd><a href="https://www.bansho.com/" target="_blank">Bansho</a></dd>
       <dd><a href="https://www.careerlist.com/" target="_blank">Careerlist</a></dd>
@@ -48,15 +43,18 @@ layout: default
       <dt class="small-caps">Projects</dt>
       <dd><a href="https://bleep.is/" target="_blank">Bleep</a></dd>
       <dd><a href="https://sensive.co/" target="_blank">Sensive</a></dd>
-
       <dd><a href="https://github.com/rnmp/convos" target="_blank">Convos</a></dd>
-      <dd><em>Coleure (Sold)</em></dd>
+      <dd><a href="/projects/coleure">Coleure</a></dd>
       <dd><a href="https://salvattore.js.org/" target="_blank">Salvattore</a></dd>
+
       <dt class="small-caps">Contact</dt>
       <dd>
         <a href="mailto:&#114;&#111;&#108;&#097;&#110;&#100;&#111;&#109;&#117;&#114;&#105;&#108;&#108;&#111;&#064;&#104;&#101;&#121;&#046;&#099;&#111;&#109;">
           &#114;&#111;&#108;&#097;&#110;&#100;&#111;&#109;&#117;&#114;&#105;&#108;&#108;&#111;&#064;&#104;&#101;&#121;&#046;&#099;&#111;&#109;
         </a>
+      </dd>
+      <dd>
+        <a href="https://www.twitter.com/rnmp">@rnmp on Twitter</a>
       </dd>
     </dl>
   </nav>

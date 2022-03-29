@@ -91,17 +91,18 @@ header {
 }
 
 .homepage-posts__date {
-  margin-top: 40px;
   color: #999;
   font-size: 14px;
 }
 
 .homepage-post {
+  margin-top: 40px;
   line-height: 1.5;
 }
 
 blockquote {
-  margin: unset;
+  margin-left: unset;
+  margin-right: unset;
   padding: 1em;
   border-radius: 5px;
   border: 1px dashed #ddd;
@@ -253,6 +254,10 @@ blockquote > p {
 
 .post h3 {
   font-size: 1.1rem;
+}
+
+.post header > * {
+  margin: 0;
 }
 
 .modal {
