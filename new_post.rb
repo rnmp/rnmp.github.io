@@ -5,7 +5,7 @@ require 'date'
 title = ARGV.join(' ')
 slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
 
-out_file = File.new("_posts/#{Date.today}_#{slug}.md", "w")
+out_file = File.new("_posts/#{Date.today}-#{slug}.md", "w")
 out_file.puts <<-HTML.chomp
 ---
 title: #{title}
