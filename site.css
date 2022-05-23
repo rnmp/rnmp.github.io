@@ -69,6 +69,8 @@ header {
   margin-top: 0;
   font-size: 1.5rem;
   font-weight: normal;
+  word-spacing: .125em;
+  letter-spacing: .075em;
 }
 
 .site-links {
